@@ -33,7 +33,7 @@ app.get('/search/:search', function(req, res){
 	var query = req.params.search;
 	var total = req.query.offset || 10;
 	var time = new Date();
-	const search = new Search('KuDNmVx2hl4gIoJVSr5wxjnr/Mo3XLjSMywonCLvfpk');
+	const search = new Search(process.env.API_KEY);
 	search.images(req.params.search, {top: total}, function(err, results){
 		if(err){throw err};
 		let newSearch = new History();
