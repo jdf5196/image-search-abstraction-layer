@@ -1,0 +1,16 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "jdf5196",
+  "license": "ISC",
+  "dependencies": {
+    "bing.search": "^1.0.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.12"
+  },
+  "devDependencies": {}
+}
